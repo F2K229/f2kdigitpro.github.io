@@ -1,80 +1,189 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>F2KDigit Pro | Votre partenaire digital</title>
-  <meta name="description" content="F2KDigit Pro propose des solutions digitales modernes au Bénin : sites web, marketing digital, design graphique et services numériques." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F2K MULTISERVICE | Agence Digitale</title>
+  <meta name="description" content="F2K MULTISERVICE – Solutions digitales : sites web, marketing digital, design, photo & vidéo au Bénin.">
   <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#f4f6f8; color:#333; }
-    header { background:#b00000; color:white; padding:30px 20px; text-align:center; }
-    nav { background:#800000; padding:12px; text-align:center; position:sticky; top:0; }
-    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
-    section { padding:40px 20px; max-width:1100px; margin:auto; }
-    h2 { color:#b00000; margin-bottom:15px; }
-    .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:15px; }
-    .card { background:white; padding:20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
-    .btn { display:inline-block; background:#b00000; color:white; padding:12px 25px; text-decoration:none; border-radius:5px; }
-    footer { background:#222; color:white; text-align:center; padding:25px; }
-    .whatsapp { position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px 18px; border-radius:50%; text-decoration:none; font-size:20px; }
-    form input, form textarea { width:100%; padding:10px; margin-bottom:10px; border-radius:5px; border:1px solid #ccc; }
-    form button { background:#b00000; color:white; padding:10px; border:none; border-radius:5px; width:100%; }
+    :root{
+      --primary:#2563eb;
+      --secondary:#0ea5e9;
+      --dark:#020617;
+      --light:#e5e7eb;
+      --muted:#94a3b8;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial, Helvetica, sans-serif;background:#0f172a;color:var(--light);line-height:1.6}
+    header{background:linear-gradient(135deg,var(--primary),var(--secondary));padding:80px 20px;text-align:center}
+    header h1{font-size:2.8rem;margin-bottom:10px}
+    header p{max-width:800px;margin:auto;font-size:1.2rem}
+    nav{position:sticky;top:0;z-index:1000;background:#020617;display:flex;justify-content:center;gap:20px;padding:15px 10px}
+    nav a{color:var(--light);text-decoration:none;font-weight:bold}
+    nav a:hover{color:var(--secondary)}
+    section{padding:70px 20px;max-width:1200px;margin:auto}
+    h2{text-align:center;color:#38bdf8;margin-bottom:30px}
+    .services,.portfolio,.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+    .card{background:var(--dark);padding:25px;border-radius:15px;box-shadow:0 15px 30px rgba(0,0,0,.4);transition:.3s}
+    .card:hover{transform:translateY(-5px)}
+    .card h3{color:#60a5fa}
+    .about,.contact{text-align:center;max-width:900px;margin:auto}
+    .contact a{color:#38bdf8;text-decoration:none;font-weight:bold}
+    form{display:grid;gap:15px;margin-top:30px}
+    input,textarea,button{padding:12px;border-radius:8px;border:none;font-size:1rem}
+    button{background:var(--primary);color:white;font-weight:bold;cursor:pointer}
+    button:hover{background:var(--secondary)}
+    footer{background:#020617;text-align:center;padding:25px;color:var(--muted);font-size:.9rem}
+    .whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 18px;border-radius:50%;font-size:20px;text-decoration:none;box-shadow:0 10px 20px rgba(0,0,0,.4)}
+    .success-message{display:none;margin-top:15px;color:#22c55e;font-weight:bold}
   </style>
 </head>
 <body>
 
-<header>
-  <h1>F2KDigit Pro</h1>
-  <p>Votre partenaire digital de confiance</p>
-  <a class="btn" href="#contact">Demander un service</a>
-</header>
-
 <nav>
   <a href="#accueil">Accueil</a>
-  <a href="#apropos">À propos</a>
   <a href="#services">Services</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#devis">Demande de devis</a>
+  <a href="#inscription">Créer un compte</a>
+  <a href="#login">Connexion</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<section id="accueil">
-  <h2>Solutions digitales modernes</h2>
-  <p>Nous accompagnons particuliers, entreprises et institutions dans leurs projets numériques au Bénin.</p>
-</section>
-
-<section id="apropos">
-  <h2>À propos</h2>
-  <p><strong>F2KDigit Pro</strong> est une branche de F2K MULTISERVICE spécialisée dans les solutions digitales modernes et accessibles.</p>
-</section>
+<header id="accueil">
+  <h1>F2K MULTISERVICE</h1>
+  <p>Votre partenaire de confiance pour des solutions digitales modernes et accessibles au Bénin.</p>
+</header>
 
 <section id="services">
-  <h2>Nos services</h2>
+  <h2>Nos Services</h2>
   <div class="services">
-    <div class="card">🌐 Création et gestion de sites web</div>
-    <div class="card">📢 Marketing digital & réseaux sociaux</div>
-    <div class="card">🎨 Design graphique & identité visuelle</div>
-    <div class="card">📸 Production photo & vidéo</div>
-    <div class="card">📱 Développement d’applications mobiles</div>
-    <div class="card">🖥️ Support et maintenance informatique</div>
-    <div class="card">📄 Documents administratifs digitalisés</div>
+    <div class="card"><h3>Création de sites web</h3><p>Sites modernes, responsives et performants.</p></div>
+    <div class="card"><h3>Marketing digital</h3><p>Campagnes, réseaux sociaux et stratégie digitale.</p></div>
+    <div class="card"><h3>Design graphique</h3><p>Logos, flyers, bannières et supports visuels.</p></div>
+    <div class="card"><h3>Production photo & vidéo</h3><p>Reportages, shootings et vidéos professionnelles.</p></div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="portfolio">
+    <div class="card"><h3>Projet 1</h3><p>Description du projet 1</p></div>
+    <div class="card"><h3>Projet 2</h3><p>Description du projet 2</p></div>
+    <div class="card"><h3>Projet 3</h3><p>Description du projet 3</p></div>
+  </div>
+</section>
+
+<section id="devis">
+  <h2>Demande de devis</h2>
+  <div class="contact">
+    <form id="devisForm">
+      <input type="text" name="nom" placeholder="Nom complet" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="text" name="service" placeholder="Service souhaité" required />
+      <input type="number" name="budget" placeholder="Budget estimé" />
+      <textarea name="message" rows="5" placeholder="Décrivez votre projet" required></textarea>
+      <button type="submit">Envoyer sur WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section id="inscription">
+  <h2>Créer un compte client</h2>
+  <div class="contact">
+    <p>Inscrivez-vous librement. Votre compte est actif immédiatement.</p>
+    <form id="signupForm">
+      <input type="text" id="nom" placeholder="Nom complet" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Mot de passe" required />
+      <button type="submit">Créer mon compte</button>
+    </form>
+    <p class="success-message" id="signupSuccess">✅ Compte créé avec succès !</p>
+    <p class="success-message" id="signupError" style="color:#f87171">❌ Erreur lors de la création du compte.</p>
+  </div>
+</section>
+
+<section id="login">
+  <h2>Connexion</h2>
+  <div class="contact">
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Email" required />
+      <input type="password" id="loginPassword" placeholder="Mot de passe" required />
+      <button type="submit">Se connecter</button>
+    </form>
+    <p class="success-message" id="loginSuccess">✅ Connexion réussie !</p>
+    <p class="success-message" id="loginError" style="color:#f87171">❌ Email ou mot de passe incorrect.</p>
   </div>
 </section>
 
 <section id="contact">
-  <h2>Contact & Demande de service</h2>
-  <form>
-    <input type="text" placeholder="Votre nom" required />
-    <input type="tel" placeholder="Téléphone / WhatsApp" required />
-    <textarea placeholder="Votre demande" rows="4" required></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-  <p>📞 +229 0158 070708 | 📧 f2kservice@gmail.com</p>
+  <h2>Contact</h2>
+  <div class="contact">
+    <p>📞 <a href="tel:+2290158070708">+229 01 58 07 07 08</a></p>
+    <p>📧 <a href="mailto:f2kservice@gmail.com">f2kservice@gmail.com</a></p>
+    <p>📍 Bénin & Afrique</p>
+  </div>
 </section>
+
+<footer>
+  <p>© 2026 F2K MULTISERVICE. Tous droits réservés.</p>
+</footer>
 
 <a class="whatsapp" href="https://wa.me/2290158070708" target="_blank">💬</a>
 
-<footer>
-  <p>© 2026 F2KDigit Pro – Tous droits réservés</p>
-</footer>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "VOTRE_API_KEY",
+    authDomain: "VOTRE_PROJET.firebaseapp.com",
+    projectId: "VOTRE_PROJET",
+  };
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+
+  // Inscription libre
+  document.getElementById('signupForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    auth.createUserWithEmailAndPassword(email, password)
+      .then(() => {
+        document.getElementById('signupSuccess').style.display = 'block';
+        document.getElementById('signupError').style.display = 'none';
+        e.target.reset();
+      })
+      .catch(() => {
+        document.getElementById('signupError').style.display = 'block';
+        document.getElementById('signupSuccess').style.display = 'none';
+      });
+  });
+
+  // Connexion
+  document.getElementById('loginForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
+    auth.signInWithEmailAndPassword(email, password)
+      .then(() => {
+        document.getElementById('loginSuccess').style.display = 'block';
+        document.getElementById('loginError').style.display = 'none';
+      })
+      .catch(() => {
+        document.getElementById('loginError').style.display = 'block';
+        document.getElementById('loginSuccess').style.display = 'none';
+      });
+  });
+
+  // Formulaire Devis vers WhatsApp
+  document.getElementById('devisForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const f = e.target;
+    const text = `📄 *Demande de devis F2K MULTISERVICE*%0A%0A👤 Nom : ${f.nom.value}%0A📧 Email : ${f.email.value}%0A🛠 Service : ${f.service.value}%0A💰 Budget : ${f.budget.value || 'Non précisé'} FCFA%0A📝 Message : ${f.message.value}`;
+    window.open(`https://wa.me/2290158070708?text=${text}`, '_blank');
+  });
+</script>
 
 </body>
-    </html>
+                        </html>
+  
